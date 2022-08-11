@@ -15,4 +15,16 @@ public class ListOfOperation {
         linkedList.append(70);
         linkedList.print();
     }
+    public static void insertDataInBetween(){
+        LinkedList linkedList=new LinkedList();
+        Node secondNode =linkedList.push(70);
+        Node firstNode =linkedList.push(56);
+        Node newNode =new Node(30);
+        System.out.println("Before");
+        linkedList.print();
+        linkedList.insertDataInBetween(firstNode,newNode);
+        System.out.println(                             );
+        System.out.println("After");
+        linkedList.print();
+    }
 }

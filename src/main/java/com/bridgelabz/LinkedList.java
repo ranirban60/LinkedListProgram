@@ -25,6 +25,11 @@ public class LinkedList {
             tail = newNode;
         }
     }
+    public void insertDataInBetween(Node previousNode, Node newNode) {//56->30->70
+        Node tempNode = previousNode.next;
+        previousNode.next = newNode;
+        newNode.next = tempNode;
+    }
     public void print() {//To print the data
         if (head == null) {
             System.out.println("Linked List is Empty");
