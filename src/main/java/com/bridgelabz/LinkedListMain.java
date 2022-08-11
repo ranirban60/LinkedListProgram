@@ -13,6 +13,7 @@ public class LinkedListMain {
         System.out.println("Enter 2 to add the data at the End"); // UC 3
         System.out.println("Enter 3 to add the data at In Between"); // UC4
         System.out.println("Enter 4 to delete the data at First position"); // UC 5
+        System.out.println("Enter 5 to delete the data at the Last Position");//UC6
 
         switch (scanner.nextInt()) {
             case 1:
@@ -26,6 +27,9 @@ public class LinkedListMain {
                 break;
             case 4:
                 ListOfOperation.pop();//Calling pop() method
+                break;
+            case 5:
+                ListOfOperation.popLast();//Calling popLast() method
                 break;
         }
 
