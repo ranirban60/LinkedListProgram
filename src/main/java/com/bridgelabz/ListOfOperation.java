@@ -41,11 +41,9 @@ public class ListOfOperation {
         System.out.println();
         System.out.println("After");
         linkedList.print();
-
-
     }
 
-    public static void popLast() {
+    public static void popLast() {// This method is used to delete the last element
         LinkedList linkedList = new LinkedList();
         Node firstNode = linkedList.push(70);
         Node secondNode = linkedList.push(30);

@@ -1,5 +1,5 @@
 /*
-Ability to delete the first element in the Linked List
+Ability to delete the last element in the Linked List
  */
 package com.bridgelabz;
 
@@ -9,11 +9,12 @@ public class LinkedListMain {
     public static void main(String[] args) {
         System.out.println("Welcome to LinkedList DataStructure Program");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter 1 to add the data at the Start"); // UC 2
-        System.out.println("Enter 2 to add the data at the End"); // UC 3
+        System.out.println("Enter 1 to add the data at the Start"); // UC2
+        System.out.println("Enter 2 to add the data at the End"); // UC3
         System.out.println("Enter 3 to add the data at In Between"); // UC4
-        System.out.println("Enter 4 to delete the data at First position"); // UC 5
-        System.out.println("Enter 5 to delete the data at the Last Position");//UC6
+        System.out.println("Enter 4 to delete the data at First position"); // UC5
+        System.out.println("Enter 5 to delete the data at the Last Position");// UC6
+
 
         switch (scanner.nextInt()) {
             case 1:
@@ -32,6 +33,5 @@ public class LinkedListMain {
                 ListOfOperation.popLast();//Calling popLast() method
                 break;
         }
-
     }
 }
