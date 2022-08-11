@@ -1,5 +1,5 @@
 /*
-Ability to delete the last element in the Linked List
+Ability to search Linked List to find Node with value 30
  */
 package com.bridgelabz;
 
@@ -14,7 +14,7 @@ public class LinkedListMain {
         System.out.println("Enter 3 to add the data at In Between"); // UC4
         System.out.println("Enter 4 to delete the data at First position"); // UC5
         System.out.println("Enter 5 to delete the data at the Last Position");// UC6
-
+        System.out.println("Enter 6 to search the data"); // UC7
 
         switch (scanner.nextInt()) {
             case 1:
@@ -31,6 +31,9 @@ public class LinkedListMain {
                 break;
             case 5:
                 ListOfOperation.popLast();//Calling popLast() method
+                break;
+            case 6:
+                ListOfOperation.searchData();//Calling searchData() method
                 break;
         }
     }

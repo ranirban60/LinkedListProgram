@@ -55,4 +55,13 @@ public class ListOfOperation {
         System.out.println("After");
         linkedList.print();
     }
+    public static void searchData() {// This method is used to search the element
+        LinkedList linkedList=new LinkedList();
+        Node firstNode= linkedList.push(70);
+        Node secondNode= linkedList.push(30);
+        Node newNode=linkedList.push(56);
+        System.out.println("Before");
+        linkedList.print();
+        linkedList.searchData(30);
+    }
 }
