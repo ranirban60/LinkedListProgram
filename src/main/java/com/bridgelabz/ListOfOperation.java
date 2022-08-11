@@ -80,4 +80,5 @@ public class ListOfOperation {
         linkedList.print();
 
     }
+
 }

@@ -1,6 +1,4 @@
-/*
-Ability to search Linked List to find Node with value 30
- */
+
 package com.bridgelabz;
 
 import java.util.Scanner;
