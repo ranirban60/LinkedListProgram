@@ -1,3 +1,6 @@
+/*
+Ability to create OrderedLinkedList
+ */
 package com.bridgelabz;
 
     public class OrderedLinkedList<T extends Comparable <T>> {
