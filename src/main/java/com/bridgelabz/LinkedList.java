@@ -84,4 +84,54 @@ public class LinkedList {
                 System.out.println(searchData+" is not found");
         }
     }
+    public int size() {
+        int count = 0; // No data 1 element
+
+        Node temp = head;
+
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
+    public void insertAfterElement(int userIndex, int data) {
+
+        if (userIndex == 0)
+            push(data);
+
+
+        else if (userIndex == size())
+            append(data);
+
+
+        else if (userIndex < 0 || userIndex >= size())
+            System.out.println("Invalid index");
+
+        else {
+            // Creating New Node
+            Node newNode = new Node(data);
+
+            // To track traversing
+            int index = 0;
+
+            // Pointers to track left & right side elements
+            Node left = head;
+            Node right = left.next;
+            while (index < userIndex - 1) {
+                left = left.next;
+                right = right.next;
+                index++;
+            }
+
+
+            newNode.next = right;
+            left.next = newNode;
+
+        }
+
+    }
+
 }
+

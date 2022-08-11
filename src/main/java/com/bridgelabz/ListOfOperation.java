@@ -1,5 +1,6 @@
 package com.bridgelabz;
 
+
 public class ListOfOperation {
     public static void addData() {//This method is used to add data at start
         LinkedList linkedList = new LinkedList();
@@ -55,13 +56,28 @@ public class ListOfOperation {
         System.out.println("After");
         linkedList.print();
     }
+
     public static void searchData() {// This method is used to search the element
-        LinkedList linkedList=new LinkedList();
-        Node firstNode= linkedList.push(70);
-        Node secondNode= linkedList.push(30);
-        Node newNode=linkedList.push(56);
+        LinkedList linkedList = new LinkedList();
+        Node firstNode = linkedList.push(70);
+        Node secondNode = linkedList.push(30);
+        Node newNode = linkedList.push(56);
         System.out.println("Before");
         linkedList.print();
         linkedList.searchData(30);
+    }
+
+    public static void insertAfterElement() {//This method is used to insert after element
+        LinkedList linkedList = new LinkedList();
+        Node firstNode = linkedList.push(70);
+        Node secondNode = linkedList.push(30);
+        Node newNode = linkedList.push(56);
+        System.out.println("Before");
+        linkedList.print();
+        System.out.println("                                      ");
+        linkedList.insertAfterElement(2, 40);
+        System.out.println("After");
+        linkedList.print();
+
     }
 }
